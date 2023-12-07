@@ -36,6 +36,9 @@ android {
 }
 
 dependencies {
+    // HttpLogging 라이브러리
+    implementation ("com.squareup.okhttp3:okhttp:4.9.2")
+    implementation ("com.squareup.okhttp3:logging-interceptor:4.9.2")
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
@@ -44,7 +47,7 @@ dependencies {
     val retrofitVersion = "2.9.0"
     implementation("com.squareup.retrofit2:retrofit:$retrofitVersion")
     implementation("com.squareup.retrofit2:converter-gson:$retrofitVersion")
-    implementation("com.squareup.retrofit2:converter-simplexml:$retrofitVersion")
+    implementation("com.squareup.retrofit2:converter-scalars:$retrofitVersion")
     // ViewModel 과 LiveData
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
