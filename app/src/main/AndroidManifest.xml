@@ -13,19 +13,18 @@
         android:usesCleartextTraffic="true"
         android:supportsRtl="true"
         android:theme="@style/Theme.JapanAirportWeather"
-        tools:targetApi="31">
-        <activity
-            android:name=".WeatherInfoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+        tools:targetApi="34">
+
+        <activity android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".WeatherInfoActivity" />
+
     </application>
 
 </manifest>
